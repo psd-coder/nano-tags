@@ -193,7 +193,7 @@ Set `attribute: false` to create a prop that lives only as a JS property and a N
 
 ### Refs
 
-Declare typed element references via `withRefs`. Refs query the component's own DOM, skipping elements inside nested custom elements  elements by default.
+Declare typed element references via `withRefs`. Refs query the component's own DOM, skipping elements inside nested custom elements by default.
 
 `r.one()` returns a single element (throws if missing), `r.many()` returns an array (throws if empty). When you pass a tag name, it's used for both **type inference** and **runtime validation**:
 
