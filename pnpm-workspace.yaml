@@ -2,3 +2,8 @@ packages:
   - "packages/*"
   - "apps/*"
 minimumReleaseAge: 4320
+minimumReleaseAgeExclude:
+  # First-party: consumed as soon as it is released, so the cooldown only delays us.
+  - astro-pigment
+  # Transitive dep of astro-pigment; remove once it ages past the cutoff.
+  - es-toolkit

@@ -5,17 +5,18 @@
     "dev": "pnpm --filter nanotags dev & astro dev",
     "build": "pnpm --filter nanotags build && astro build",
     "preview": "astro preview",
-    "astro": "astro",
     "typecheck": "pnpm --filter nanotags build && cmk && astro check",
     "lint": "pnpm run /^lint:/",
     "lint:styles": "stylelint \"src/**/*.css\"",
     "format": "pnpm run /^format:/",
-    "format:styles": "stylelint \"src/**/*.css\" --fix"
+    "format:styles": "stylelint \"src/**/*.css\" --fix",
+    "docs:dev": "pnpm --filter nanotags dev",
+    "docs:build": "pnpm --filter nanotags build"
   },
   "dependencies": {
     "@nanostores/persistent": "^1.3.3",
-    "astro": "^6.0.8",
-    "astro-pigment": "^0.16.0",
+    "astro": "^7.1.3",
+    "astro-pigment": "^0.20.1",
     "es-toolkit": "^1.45.1",
     "linkedom": "^0.18.12",
     "nanoid": "^5.1.7",
@@ -25,8 +26,8 @@
     "valibot": "^1.3.1"
   },
   "devDependencies": {
-    "@astrojs/check": "^0.9.8",
-    "@astrojs/ts-plugin": "^1.10.7",
+    "@astrojs/check": "^0.9.9",
+    "@astrojs/ts-plugin": "^1.10.10",
     "@css-modules-kit/codegen": "^0.10.0",
     "@css-modules-kit/ts-plugin": "^0.10.0",
     "@types/node": "^24.12.0",
